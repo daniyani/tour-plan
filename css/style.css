@@ -394,6 +394,7 @@ template {
   height: 100%;
   background-color: #f5fafe;
   border: none;
+  outline: none;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
