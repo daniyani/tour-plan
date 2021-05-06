@@ -496,13 +496,15 @@ img {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
-  .navbar-menu {
+  .search__input {
+    width: 340px;
+  }
+  .search-menu {
     padding-top: 22px;
     padding-bottom: 22px;
   }
-  .navbar-menu__link {
+  .search-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
