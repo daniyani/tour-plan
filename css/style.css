@@ -409,6 +409,7 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1;
+  font-weight: bold;
 }
 
 .navbar-bottom {
@@ -434,9 +435,25 @@ img {
   outline: none;
   font-size: 12px;
   line-height: 15px;
-  color: #333333;
   padding-left: 23px;
   padding-right: 75px;
+  color: #333333;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input::placeholder {
+  color: #BDBDBD;
 }
 
 .search__button {
@@ -510,7 +527,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
