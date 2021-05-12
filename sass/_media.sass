@@ -48,6 +48,19 @@
     width: 340px
   .newsletter
     padding-top: 79px
+  .reviews
+    &-slider
+      &__item
+        margin: 48px auto 0
+        max-width: 580px
+        &:before
+          display: none
+        &:after
+          display: none
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
 
 @media (max-width:767px)
   .container
@@ -110,6 +123,24 @@
     max-width: 576px
     width: 96%
     align-items: flex-start
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+      &__button
+        top: 32px
+        &--prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -65px
+        &--next
+          right: 50%
+          transform: translate(50%, 0)
+          margin-right: -65px
+    &__title
+      font-size: 20px
+      line-height: 23px
+      margin-bottom: 42px
 
 @media (max-width:576px)
   .container
