@@ -34,6 +34,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 56px
     &-grid
       flex-direction: column
     &-slider
@@ -47,9 +48,15 @@
   .map
     width: 340px
   .newsletter
-    padding-top: 79px
+    padding-top: 97px
   .reviews
     &-slider
+      &__button
+        top: 30%
+        &--prev
+          left: 2px
+        &--next
+          right: 0
       &__item
         margin: 48px auto 0
         max-width: 580px
@@ -165,7 +172,7 @@
     padding-top: 76px
     padding-bottom: 83px
     &-wrapper
-      width: 92%
+      width: 87%
     &__title
       margin-bottom: 37px
     &-title
@@ -176,6 +183,16 @@
         line-height: 38px
   .subscribe
     width: 100%
+    &__input
+      padding-left: 19px
+  .reviews
+    &-slider
+      &__button
+        &--prev
+          margin-left: -91px
+        &--next
+          margin-right: -87px
+
 @media (max-width:360px)
   .container
     max-width: 280px

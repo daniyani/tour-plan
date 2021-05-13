@@ -917,6 +917,10 @@ img {
   color: #ffffff;
   width: 65px;
   cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .reviews {
@@ -957,7 +961,7 @@ img {
 .reviews-slider__item:before {
   content: '';
   position: absolute;
-  top: 119px;
+  top: 121px;
   right: 62px;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
@@ -978,9 +982,9 @@ img {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 28%;
+  -webkit-transform: traslateY(-50%);
+          transform: traslateY(-50%);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -994,12 +998,12 @@ img {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-2.svg);
-  left: 0;
+  left: 18px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-2.svg);
-  right: 0;
+  right: 18px;
 }
 
 .reviews-slider__profile {
@@ -1062,6 +1066,8 @@ img {
 
 .reviews-slider__text {
   max-width: 537px;
+  max-height: 116px;
+  overflow: auto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1113,6 +1119,9 @@ img {
   .search__input {
     width: 340px;
   }
+  .hotel {
+    padding-bottom: 56px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1138,7 +1147,16 @@ img {
     width: 340px;
   }
   .newsletter {
-    padding-top: 79px;
+    padding-top: 97px;
+  }
+  .reviews-slider__button {
+    top: 30%;
+  }
+  .reviews-slider__button--prev {
+    left: 2px;
+  }
+  .reviews-slider__button--next {
+    right: 0;
   }
   .reviews-slider__item {
     margin: 48px auto 0;
@@ -1306,7 +1324,7 @@ img {
     padding-bottom: 83px;
   }
   .newsletter-wrapper {
-    width: 92%;
+    width: 87%;
   }
   .newsletter__title {
     margin-bottom: 37px;
@@ -1321,6 +1339,15 @@ img {
   }
   .subscribe {
     width: 100%;
+  }
+  .subscribe__input {
+    padding-left: 19px;
+  }
+  .reviews-slider__button--prev {
+    margin-left: -91px;
+  }
+  .reviews-slider__button--next {
+    margin-right: -87px;
   }
 }
 
