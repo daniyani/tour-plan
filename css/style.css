@@ -1101,6 +1101,14 @@ img {
           justify-content: space-between;
 }
 
+.activities__card--null {
+  white-space: pre-line;
+}
+
+.activities__card--second {
+  white-space: pre-line;
+}
+
 .card {
   position: relative;
   display: -webkit-box;
@@ -1155,6 +1163,7 @@ img {
 }
 
 .card__button {
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -1270,6 +1279,18 @@ img {
   .activities {
     padding-bottom: 70px;
     padding-top: 50px;
+  }
+  .activities__card--null {
+    white-space: pre-line;
+  }
+  .activities__card--third {
+    white-space: pre-line;
+  }
+  .activities__card--second {
+    white-space: pre-line;
+  }
+  .activities__card--first {
+    white-space: pre-line;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
