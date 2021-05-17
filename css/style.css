@@ -1254,7 +1254,7 @@ img {
 }
 
 .trip-row__item {
-  padding: 35px 21px 30px 44px;
+  padding: 37px 21px 30px 44px;
   background-color: #0A223D;
   color: #ffffff;
   display: -webkit-box;
@@ -1272,7 +1272,7 @@ img {
 
 .trip-row__title {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1286,12 +1286,12 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 160.6%;
-  margin-bottom: 34px;
+  margin-bottom: 44px;
   overflow: auto;
 }
 
 .trip-row__room {
-  margin-bottom: 37px;
+  margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1299,6 +1299,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
 }
 
 .trip-row__info {
@@ -1312,11 +1315,10 @@ img {
 }
 
 .trip-row__label {
-  font-style: normal;
-  font-weight: normal;
+  color: #ffffff;
   font-size: 12px;
   line-height: 15px;
-  margin-left: 14px;
+  margin-left: 13px;
 }
 
 .trip-row__price {
@@ -2022,11 +2024,6 @@ img {
   }
   .packages {
     padding-top: 25px;
-  }
-  .packages__title {
-    font-size: 25px;
-    line-height: 46px;
-    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
