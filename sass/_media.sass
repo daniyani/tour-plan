@@ -10,6 +10,16 @@
   .card
     width: 225px
     height: 225px
+  .packages
+    &-grid
+      grid-template-columns: 1fr 1fr 1fr
+
+  .trip-column
+    &__item
+      padding-bottom: 13%
+  .trip-row
+    &__item
+      padding-top: 39px
 @media (max-width:992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -92,7 +102,17 @@
     height: 255px
     &__image
       object-fit: cover
-
+  .packages
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &-grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 500px minmax(500px, 1fr)
+  .trip-column
+    &__item
+      padding-bottom: 10%
 @media (max-width:767px)
   .container
     max-width: 576px
@@ -178,7 +198,25 @@
   .activities
     padding-top: 40px
     padding-bottom: 60px
-
+  .trip-row, .trip-column
+    &__rating
+      display: none
+    &__sale
+      font-size: 20px
+      line-height: 26px
+    &__crossout
+      font-size: 12px
+      line-height: 16px
+    &__button
+      padding: 8px 24px
+      font-size: 12px
+      line-height: 17px
+  .packages
+    padding-top: 30px
+    &__title
+      font-size: 20px
+      line-height: 23px
+      margin-bottom: 42px
 @media (max-width:576px)
   .container
     width: 96%
@@ -251,6 +289,64 @@
       font-size: 18px
       line-height: 23px
       padding-bottom: 36px
+  .packages
+    &__title
+      font-size: 18px
+      line-height: 23px
+    &-grid
+      grid-template-columns: 1fr
+      grid-template-rows: minmax(500px, 1fr)
+  .trip-column
+    &__item
+      padding-bottom: 8%
+  .trip-row
+    grid-column-start: span 1
+    flex-direction: column
+    &__photo
+      position: relative
+    &__img
+      display: block
+      object-fit: cover
+      width: 100%
+      height: 250px
+    &__desc
+      display: none
+    &__offer
+      left: 0
+      top: 30px
+      padding: 4px 9px
+      font-style: normal
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+      border-radius: 0px 4px 4px 0px
+    &__item
+      padding: 30px 20px 6% 32px
+      flex-direction: column
+    &__title
+      margin: 0
+      margin-bottom: 23px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+    &__room
+      margin-bottom: 24px
+    &__info
+      display: flex
+      align-items: center
+      margin-bottom: 11px
+    &__label
+      margin-left: 14px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &__price
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
 
 @media (max-width:360px)
   .container
@@ -269,3 +365,9 @@
     height: 221px
   .newsletter
     padding-top: 32px
+  .packages
+    padding-top: 25px
+    &__title
+      font-size: 25px
+      line-height: 46px
+      margin-bottom: 40px
