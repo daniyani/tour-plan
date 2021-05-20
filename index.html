@@ -15,21 +15,21 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: Search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile_hidden">
           <img class="user__avatar" src="img/user-avatar.jpg" alt="Avatar: Nathan">
           <span class="user__name">Nathan</span>
 
@@ -53,6 +53,20 @@
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible"><a href="#"
+              class="user navbar__user navbar__user--mobile_visible">
+              <img class="user__avatar" src="img/user-avatar.jpg" alt="Avatar: Nathan">
+              <span class="user__name user__name--light">Nathan</span>
+
+            </a></li>
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <form action="#" class="search navbar__search navbar__search--mobile_visible">
+              <input type="text" class="search__input" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: Search">
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
@@ -492,8 +506,8 @@
         <div class="card activities__card activities__card--null">
           <img src="img/activity-1.jpg" alt="The curious corner
             of chamarel" class="card__image">
-          <h3 class="card__title">The curious corner
-            of chamarel</h3>
+          <h3 class="card__title">The curious corner of&nbsp;chamarel
+          </h3>
           <button class="card__button">Book Now</button>
         </div>
         <div class="card activities__card activities__card--first">
@@ -506,8 +520,7 @@ course" class="card__image">
         <div class="card activities__card activities__card--second">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
 trip - full day" class="card__image">
-          <h3 class="card__title">Tamarind falls hiking
-            trip - full day</h3>
+          <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <div class="card activities__card activities__card--third">
@@ -524,7 +537,9 @@ quest" class="card__image">
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vercical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+
+        <a href="#" class="footer__logo-link"> <img src="img/vercical-logo.svg" alt="Logo: Best Tour Plan"
+            class="logo footer__logo"></a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES
           </h3>
@@ -566,13 +581,13 @@ quest" class="card__image">
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link">
+            <a href="https://www.facebook.com" target="_blank" class="footer__link">
               <img src="img/facebook.svg" alt="Facebook">
             </a>
-            <a href="#" class="footer__link">
+            <a href="https://www.youtube.com" target="_blank" class="footer__link">
               <img src="img/youtube.svg" alt="Youtube">
             </a>
-            <a href="#" class="footer__link">
+            <a href="https://www.instagram.com" target="_blank" class="footer__link">
               <img src="img/instagram.svg" alt="Instagram">
             </a>
           </div>
@@ -592,34 +607,32 @@ quest" class="card__image">
               </a></li>
           </ul>
         </div>
-        <div class="footer__contact-details">
+        <div class="contact-details footer__contact-details">
           <h3 class="footer__title footer__title--mb-3 footer__title--pt">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
-          <div class="footer__ul">
-            <li class="footer__item footer__item--bottom">
-              <div class="footer__icon-wrapper">
-                <img src="img/map-marker.svg" class="footer__icon" alt="Map-marker">
-              </div>
+          <ul class="footer__ul">
+            <li class="footer__item contact-details__item">
+              <img src="img/map-marker.svg" class="footer__icon footer__icon--24" alt="Map-marker">
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
-            <li class="footer__item footer__item--bottom">
-              <div class="footer__icon-wrapper">
-                <img src="img/phone-call-footer.svg" class="footer__icon" alt="Phone-call">
-              </div>
-              Tel (business hours) : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+            <li class="footer__item contact-details__item">
+              <img src="img/phone-call-footer.svg " class=" footer__icon footer__icon--23" alt="Map-marker">
+              <span> Tel (business hours): <a class="contact-details__link" href="tel:2691500">269 1500</a> <br>
+                Tel (hotline) Monday - Saturday: <a class="contact-details__link"
+                  href="tel:52566138">52&NoBreak;-56&NoBreak;-61&NoBreak;-38&NoBreak;</a>
+                (08:00 am – 20:00 pm) <br>
+                Tel (hotline) Sunday: <a class="contact-details__link" href="tel:52566138">52-56-61-38</a> (08:00 am –
+                14:00 pm)
+              </span>
             </li>
-            <li class="footer__item footer__item--bottom">
-              <div class="footer__icon-wrapper">
-                <img src="img/email.svg" class="footer__icon" alt="Email">
-              </div>
-              cherly.lawson@example.com
+            <li class="footer__item contact-details__item">
+              <img src="img/email.svg" class="footer__icon footer__icon--20" alt="Email">
+              <a href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
             </li>
-          </div>
+          </ul>
         </div>
         <div class="footer__contact-form">
-          <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+          <h3 class="footer__title footer__title--mb-3 footer__title--mb-4">Send us a message</h3>
           <form action="#" class="footer__form">
             <input type="text" class="input footer__input" placeholder="Your Full Name*">
             <input type="text" class="input footer__input" placeholder="Phone Number*">
@@ -634,9 +647,9 @@ quest" class="card__image">
       <!-- /.footer-wrapper -->
       <div class="footer-bottom">
         <div class="footer-bottom__note">
-          <span class="footer-bottom__label">Disclaimer</span>
-          <span class="footer-bottom__label">Conditions of use</span>
-          <span class="footer-bottom__label">Cancellation policy</span>
+          <span class="footer-bottom__label"><a href="#"> Disclaimer</a></span>
+          <span class="footer-bottom__label"><a href="#">Conditions of use</a></span>
+          <span class="footer-bottom__label"><a href="#"> Cancellation policy</a></span>
         </div>
         <img src="img/payment.svg" alt="Payment" class="footer-bottom__payment">
       </div>

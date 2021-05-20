@@ -1,8 +1,8 @@
 .footer
   background-color: $dark
   color: $light
-  padding-top: 108px
-  padding-bottom: 46px
+  padding-top: 110px
+  padding-bottom: 42px
   &-wrapper
     display: grid
     grid-template-columns: repeat(4,minmax(min-content, 1fr))
@@ -10,15 +10,18 @@
     grid-gap: 20px
     align-items: start
   &__logo
-    width: 166px
-    grid-row: 1 / 3
-    align-self: stretch
+    width: 153px
+    &-link
+      grid-row: 1 / 3
+      align-self: center
 
   &__categories
     grid-row: 1/ 4
+    padding-left: 8px
   &__legal
     grid-column: 4 / 6
     justify-self: end
+    padding-right: 6px
   &__social
     &-links
       display: flex
@@ -30,9 +33,10 @@
       align-items: flex-start
       grid-row: 2/4
       grid-column: span 2
-      padding-left: 14px
+      padding-left: 15px
   &__contact-details
     grid-column: span 2
+
   &__additional
     justify-self: end
 
@@ -40,6 +44,7 @@
     margin: 0
     padding: 0
     list-style: none
+
   &__title
     font-style: normal
     font-weight: bold
@@ -49,9 +54,11 @@
     margin-bottom: 16px
     text-transform: uppercase
     &--mb-3
-      margin-bottom: 28px
+      margin-bottom: 23px
+    &--mb-4
+      margin-bottom: 31px
     &--pt
-      padding-top: 6px
+      padding-top: 10px
     &--inline
       margin: 0
       margin-right: 45px
@@ -63,18 +70,35 @@
     font-size: 14px
     line-height: 160%
     color: $footer-text
-    &--bottom
-      margin-bottom: 20px
   &__icon
-    &-wrapper
-      min-width: 40px
+    margin-right: 20px
+    &--23
+      width: 23px
+      height: 21px
+      margin-top: 5px
+      margin-left: 3px
+    &--20
+
+      width: 20px
+      height: 23px
+      margin-left: 4px
+
+    &--24
+      width: 24px
+      height: 22px
+      margin-left: 2px
+      margin-top: 3px
   &__link
     text-decoration: none
     color: $footer-text
   &__text
     color: $footer-text
     margin: 0
-    margin-bottom: 22px
+    margin-bottom: 23px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
   &__form
     display: flex
     align-items: flex-start
@@ -95,6 +119,10 @@
     border-radius: 4px
     padding: 0 23px
     height: 50px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
   &__message
     background-color: $light
     border-radius: 4px
@@ -104,6 +132,14 @@
     margin-bottom: 27px
     min-height: 120px
     resize: none
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+  &__info-button
+    display: flex
+    justify-content: space-between
+    min-width: 539px
 
   &__button
     min-width: 160px
@@ -144,5 +180,18 @@
     margin-right: 10px
     &:last-child
       margin-right: 0
+    a
+      text-decoration: none
+      color: inherit
   &__payment
     align-self: flex-start
+.contact-details
+  &__item
+    margin-bottom: 20px
+    display: flex
+    align-items: flex-start
+    &:last-child
+      margin-bottom: 0
+    a
+      text-decoration: none
+      color: inherit
