@@ -8,7 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-$footer__btn = $_POST['footer__btn'];
+
 
 
 // Формирование самого письма
@@ -16,7 +16,7 @@ $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
-<b>Почта:</b> $phone<br><br>
+<b>Номер:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
 
@@ -35,7 +35,7 @@ try {
     $mail->Password   = 'tourplan'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('tourplantestmessage@gmail.com', 'Даниил Михайлов', '$footer__btn'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('tourplantestmessage@gmail.com', 'Даниил Михайлов'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('daniyanii@yandex.ru');  
@@ -56,8 +56,3 @@ else {$result = "error";}
 
 // Отображение результата
 Header('Location: thankyou.html');
-
-
- 
-
-
