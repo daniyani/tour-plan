@@ -10,7 +10,6 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 
-
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
@@ -38,7 +37,8 @@ try {
     $mail->setFrom('tourplantestmessage@gmail.com', 'Даниил Михайлов'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('daniyanii@yandex.ru');  
+    $mail->addAddress('daniyanii@yandex.ru');
+    $mail->addAddress('tourplantestmessage@gmail.com');
 
 // Отправка сообщения
 $mail->isHTML(true);
