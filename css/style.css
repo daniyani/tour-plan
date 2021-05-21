@@ -2102,7 +2102,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow: auto;
   }
   .navbar__search {
     margin-right: 0;
@@ -2128,6 +2127,7 @@ img {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow: auto;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
