@@ -5,19 +5,29 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
+$email = $_POST['email'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$form__btn = $_POST['form__btn'];
 
-
-// Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
+if ($email == "") {
+  $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Номер:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
+}
+elseif ($phone == "") {
+   $title = "Новое обращение Best Tour Plan";
+$body = "
+<h2>Новое обращение</h2>
+<b>Почта:</b> $email<br>
+";
+}
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -38,7 +48,6 @@ try {
 
     // Получатель письма
     $mail->addAddress('daniyanii@yandex.ru');
-    $mail->addAddress('tourplantestmessage@gmail.com');
 
 // Отправка сообщения
 $mail->isHTML(true);
