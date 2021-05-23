@@ -11,6 +11,8 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 $form__btn = $_POST['form__btn'];
 
+
+
 if ($email == "") {
   $title = "Новое обращение Best Tour Plan";
 $body = "
@@ -27,6 +29,16 @@ $body = "
 <b>Почта:</b> $email<br>
 ";
 }
+else  {
+$title = "Новое обращение Best Tour Plan";
+$body = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Номер:</b> $phone<br><br>
+<b>Почта:</b> $email<br>
+<b>Сообщение:</b><br>$message
+";
+} 
 
 
 // Настройки PHPMailer

@@ -592,6 +592,35 @@
   .contact-details
     &__link
       word-wrap: break-word
+  .modal
+    &__dialog
+      max-width: 350px
+      max-height: 520px
+      padding: 33px 38px
+    &__info-button
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+    &__info
+      order: -1
+      margin-bottom: 10px
+      font-size: 10px
+      line-height: 12px
+    &__button
+      align-self: flex-start
+      min-width: 130px
+      min-height: 20px
+      padding: 15px
+    &__message
+      margin-bottom: 10px
+      width: 100%
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__title
+      font-size: 15px
+      line-height: 20px
+      margin-bottom: 10px
 @media (max-width:360px)
   .container
     max-width: 280px
@@ -609,3 +638,9 @@
     height: 221px
   .newsletter
     padding-top: 81px
+  .modal
+    &__dialog
+      width: 95%
+      max-width: 295px
+      max-height: 500px
+      padding: 33px 30px
