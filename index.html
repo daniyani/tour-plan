@@ -256,7 +256,7 @@
             <div class="trip-row__price">
               <span class="trip-row__crossout">$ 10,500</span>
               <span class="trip-row__sale">$ 8,500</span>
-              <button class="trip-row__button">Book Now</button>
+              <button data-toggle="modal" class="trip-row__button">Book Now</button>
             </div>
 
           </div>
@@ -290,7 +290,7 @@
             <div class="trip-column__price">
               <span class="trip-column__crossout">$ 8,500</span>
               <span class="trip-column__sale">$ 3,000</span>
-              <button class="trip-column__button">Book Now</button>
+              <button data-toggle="modal" class="trip-column__button">Book Now</button>
             </div>
 
           </div>
@@ -324,7 +324,7 @@
             <div class="trip-column__price">
               <span class="trip-column__crossout">$ 10,500</span>
               <span class="trip-column__sale">$ 9,500</span>
-              <button class="trip-column__button">Book Now</button>
+              <button data-toggle="modal" class="trip-column__button">Book Now</button>
             </div>
 
           </div>
@@ -358,7 +358,7 @@
             <div class="trip-column__price">
               <span class="trip-column__crossout">$ 4,500</span>
               <span class="trip-column__sale">$ 2,500</span>
-              <button class="trip-column__button">Book Now</button>
+              <button data-toggle="modal" class="trip-column__button">Book Now</button>
             </div>
 
           </div>
@@ -392,7 +392,7 @@
             <div class="trip-column__price">
               <span class="trip-column__crossout">$ 6,500</span>
               <span class="trip-column__sale">$ 3,500</span>
-              <button class="trip-column__button">Book Now</button>
+              <button data-toggle="modal" class="trip-column__button">Book Now</button>
             </div>
 
           </div>
@@ -508,27 +508,27 @@
             of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel
           </h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <div class="card activities__card activities__card--first">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf
 course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
             course</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <div class="card activities__card activities__card--second">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
 trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <div class="card activities__card activities__card--third">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
 quest" class="card__image">
           <h3 class="card__title">The blue marine discovery
             quest</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
 
       </div>
@@ -657,23 +657,25 @@ quest" class="card__image">
     <!-- /.container -->
   </footer>
   <div class="modal" id="modal_esc" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false"">
-    <div class=" modal__overlay"></div>
-  <div class="modal__dialog">
-    <a href="#" class="modal__close">
-      <img src="img/close.svg" alt="Icon: close">
-    </a>
-    <h3 class="modal__title modal__title--mb-3 modal__title--mb-4">Booking</h3>
-    <form action="send.php" method="POST" class="modal__form">
-      <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
-      <input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*">
-      <input type="email" name="email" class="input modal__input" placeholder="Email*">
-      <textarea rows="2" name="message" class="modal__message" placeholder="Message"></textarea>
-      <div class="modal__info-button">
-        <button name="form__btn" value="modal" class="button modal__button" type="submit">Send</button>
-        <span class="modal__info">* Required Fields</span>
-      </div>
-    </form>
+    <div class=" modal__overlay">
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__title modal__title--mb-3 modal__title--mb-4">Booking</h3>
+      <form action="send.php" method="POST" class="modal__form">
+        <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
+        <input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*">
+        <input type="email" name="email" class="input modal__input" placeholder="Email*">
+        <textarea rows="2" name="message" class="modal__message" placeholder="Message"></textarea>
+        <div class="modal__info-button">
+          <button name="form__btn" value="modal" class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </div>
+      </form>
+    </div>
   </div>
+
   </div>
   <!-- /.footer -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
