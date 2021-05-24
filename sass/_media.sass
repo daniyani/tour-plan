@@ -22,7 +22,8 @@
       padding-top: 39px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__info-button
       min-width: 465px
 @media (max-width:992px)
@@ -142,7 +143,8 @@
       grid-row: 1 / 2
       grid-column: span 2
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__form
       margin-bottom: 2px
 
@@ -330,7 +332,8 @@
       margin-bottom: 42px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &-wrapper
       grid-template-columns: 1fr
       grid-row-gap: 34px
@@ -595,7 +598,7 @@
   .modal
     &__dialog
       max-width: 350px
-      max-height: 520px
+
       padding: 33px 38px
     &__info-button
       flex-direction: column
@@ -642,7 +645,7 @@
     &__dialog
       width: 95%
       max-width: 295px
-      max-height: 500px
+
       padding: 33px 30px
 @media (max-height:480px)
   .modal
