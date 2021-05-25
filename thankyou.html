@@ -227,12 +227,17 @@
         </div>
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3 footer__title--mb-4">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*">
-            <input type="text" class="input footer__input" name="phone" placeholder="Phone Number*">
-            <textarea rows="2" class="footer__message" name="message" placeholder="Message"></textarea>
+          <form action="send.php" method="POST" class="footer__form form-validate">
+            <div class="footer__input-group">
+              <input type="text" name="name" required class="input footer__input" placeholder="Your Full Name*">
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" name="phone" minlength="11" required class="input footer__input input-phone"
+                placeholder="Phone Number*">
+            </div>
+            <textarea rows="2" name="message" class="footer__message" placeholder="Message"></textarea>
             <div class="footer__info-button">
-              <button class="button footer__button" type="submit">Send</button>
+              <button name="form__btn" value="footer" class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
             </div>
           </form>
@@ -254,6 +259,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 
 

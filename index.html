@@ -409,7 +409,7 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form id="form1" action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="email" name="email" class="subscribe__input" placeholder="Your email address">
+        <input type="email" name="email" required class="subscribe__input" placeholder="Your email address">
         <button name="form__btn" value="news" class="subscribe__button">
           Send
         </button>
@@ -638,7 +638,7 @@ quest" class="card__image">
               <input type="text" name="name" required class="input footer__input" placeholder="Your Full Name*">
             </div>
             <div class="footer__input-group">
-              <input type="tel" name="phone" required class="input footer__input input-phone"
+              <input type="tel" name="phone" minlength="17" required class="input footer__input input-phone"
                 placeholder="Phone Number*">
             </div>
             <textarea rows="2" name="message" class="footer__message" placeholder="Message"></textarea>
@@ -670,7 +670,8 @@ quest" class="card__image">
       <h3 class="modal__title modal__title--mb-3 modal__title--mb-4">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form-validate">
         <input type="text" minlength="2" required name="name" class="input modal__input" placeholder="Your Full Name*">
-        <input type="tel" required name="phone" class="input modal__input input-phone" placeholder="Phone Number*">
+        <input type="tel" required name="phone" minlength="17" class="input modal__input input-phone"
+          placeholder="Phone Number*">
         <input type="email" required name="email" class="input modal__input" placeholder="Email*">
         <textarea rows="2" name="message" class="modal__message" placeholder="Message"></textarea>
         <div class="modal__info-button">

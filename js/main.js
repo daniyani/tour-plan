@@ -87,11 +87,32 @@ $(".form-validate").each(function(){
     },
     phone: {
       required: "This field is required",
+      minlength: "Enter the entire phone number",
     },
   },
   });
 });
 
-$(".input-phone").mask("+7 (999) 99-99-999");
+ $(".newsletter__subscribe").validate({
+      errorClass: "invalid",
+      messages: {        
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },       
+      },
+  });
+
+
+var SPMaskBehavior = function (val) {
+  return val.replace(/\D/g, '').length === 11 ? '+7 (000) 000-0000' : '+7 (000) 000-0009';
+},
+spOptions = {
+  onKeyPress: function(val, e, field, options) {
+      field.mask(SPMaskBehavior.apply({}, arguments), options);
+    }
+};
+
+$('.input-phone').mask(SPMaskBehavior, spOptions);
 
 });
