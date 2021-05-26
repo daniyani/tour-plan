@@ -11,6 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,17 +20,21 @@
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
-          <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
+          <img data-aos="fade-down-right" data-aos-duration="1000" src="img/horizontal-logo.svg"
+            alt="Logo: Best Tour Plan" class="logo__image">
+
         </a>
 
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form data-aos="fade-right" data-aos-duration="8000" action="#"
+          class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: Search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a data-aos="fade-right" data-aos-duration="9000" href="#"
+          class="user navbar__user navbar__user--mobile--hidden">
           <img class="user__avatar" src="img/user-avatar.jpg" alt="Avatar: Nathan">
           <span class="user__name">Nathan</span>
 
@@ -213,9 +218,9 @@
   <!-- /.hotel -->
   <section class="packages">
     <div class="container">
-      <h2 class="packages__title">Other Packages</h2>
+      <h2 data-aos="fade-up" data-aos-duration="1000" class="packages__title">Other Packages</h2>
       <div class="packages-grid">
-        <div class="trip-row">
+        <div class="trip-row" data-aos="fade-right" data-aos-duration="800">
           <div class="trip-row__photo">
             <img src="img/packages/card-1.jpg" alt="Hotel Blue Haven" class="trip-row__img">
             <span class="trip-row__offer">Flash Offer</span>
@@ -262,7 +267,7 @@
           </div>
           <!-- Trip-row item -->
         </div>
-        <div class="trip-column">
+        <div class="trip-column" data-aos="fade-left" data-aos-duration="800">
           <div class="trip-column__photo">
             <img src="img/packages/card-2.jpg" alt="LUX* Belle Mare" class="trip-column__img">
             <span class="trip-column__offer">Flash Offer</span>
@@ -296,7 +301,7 @@
           </div>
         </div>
         <!-- /.trip-column -->
-        <div class="trip-column">
+        <div class="trip-column" data-aos="fade-up" data-aos-duration="800">
           <div class="trip-column__photo">
             <img src="img/packages/card-3.jpg" alt="White Palace" class="trip-column__img">
             <span class="trip-column__offer">Flash Offer</span>
@@ -330,7 +335,7 @@
           </div>
         </div>
         <!-- /.trip-column -->
-        <div class="trip-column">
+        <div class="trip-column" data-aos="fade-up" data-aos-duration="800">
           <div class="trip-column__photo">
             <img src="img/packages/card-4.jpg" alt="Luxury Place" class="trip-column__img">
             <span class="trip-column__offer">Flash Offer</span>
@@ -364,7 +369,7 @@
           </div>
         </div>
         <!-- /.trip-column -->
-        <div class="trip-column">
+        <div class="trip-column" data-aos="fade-up" data-aos-duration="800">
           <div class="trip-column__photo">
             <img src="img/packages/card-5.jpg" alt="Hotel Five Star" class="trip-column__img">
             <span class="trip-column__offer">Flash Offer</span>
@@ -404,11 +409,14 @@
   <section class="newsletter parallax-window" data-speed="0.4" data-parallax="scroll"
     data-image-src="img/newsletter-bg.jpg">
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title newsletter__title">
+      <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+        class="newsletter-title newsletter__title">
         subscribe to our
-        <span class="newsletter-title__strong">Newsletter</span>
+        <span data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+          class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form id="form1" action="send.php" method="POST" class="subscribe newsletter__subscribe">
+      <form data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="form1" action="send.php"
+        method="POST" class="subscribe newsletter__subscribe">
         <input type="email" name="email" required class="subscribe__input" placeholder="Your email address">
         <button name="form__btn" value="news" class="subscribe__button">
           Send
@@ -418,7 +426,7 @@
   </section>
   <section class="reviews">
     <div class="container">
-      <h2 class="reviews__title">What people think about us</h2>
+      <h2 data-aos="zoom-in" class="reviews__title">What people think about us</h2>
       <div class="swiper-container reviews-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -503,27 +511,27 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card activities__card--null">
+        <div class="card activities__card activities__card--null" data-aos="fade-right" data-aos-duration="500">
           <img src="img/activity-1.jpg" alt="The curious corner
             of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel
           </h3>
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
-        <div class="card activities__card activities__card--first">
+        <div class="card activities__card activities__card--first" data-aos="fade-right" data-aos-duration="600">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf
 course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
             course</h3>
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
-        <div class="card activities__card activities__card--second">
+        <div class="card activities__card activities__card--second" data-aos="fade-right" data-aos-duration="700">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
 trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
-        <div class="card activities__card activities__card--third">
+        <div class="card activities__card activities__card--third" data-aos="fade-right" data-aos-duration="800">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
 quest" class="card__image">
           <h3 class="card__title">The blue marine discovery
@@ -539,7 +547,7 @@ quest" class="card__image">
       <div class="footer-wrapper">
 
         <a href="#" class="footer__logo-link"> <img src="img/vercical-logo.svg" alt="Logo: Best Tour Plan"
-            class="logo footer__logo"></a>
+            class="logo footer__logo" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"></a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES
           </h3>
@@ -631,7 +639,7 @@ quest" class="card__image">
             </li>
           </ul>
         </div>
-        <div class="footer__contact-form">
+        <div class="footer__contact-form" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <h3 class="footer__title footer__title--mb-3 footer__title--mb-4">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form-validate">
             <div class="footer__input-group">
@@ -689,6 +697,7 @@ quest" class="card__image">
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 
 
