@@ -115,4 +115,6 @@ spOptions = {
 
 $('.input-phone').mask(SPMaskBehavior, spOptions);
 
+AOS.init();
+
 });
