@@ -34,8 +34,8 @@
   .navbar
     &-menu
       max-width: 673px
-      padding-top: 31px
-      padding-bottom: 22px
+      padding-top: 21px
+      padding-bottom: 21px
       margin: 0
       &__item
         white-space: nowrap
@@ -178,6 +178,12 @@
         padding-left: 0
         grid-row: 4 / 5
         grid-column: span 5
+  .hvr-sweep-to-top
+    &::before
+      display: none
+  .hvr-underline-from-center
+    &:before
+      display: none
 @media (max-width:767px)
   body
     padding-top: 78px
@@ -394,14 +400,17 @@
     width: 96%
   .hotel
     &-info
-      padding-bottom: 36px
+      padding-bottom: 34px
       &__stars
         margin-right: 12px
         margin-top: 2px
     &-slider
       height: 300px
     &__slider
-      margin-bottom: 20px
+      margin-bottom: 16px
+  .booking
+    &__room
+      margin-top: 6px
   .logo
     width: 99px
   .navbar
@@ -624,6 +633,12 @@
       font-size: 15px
       line-height: 20px
       margin-bottom: 10px
+  .breadcrump
+    &__list
+      padding-top: 13px
+      padding-bottom: 18px
+      padding-left: 0
+      padding-right: 0
 @media (max-width:360px)
   .container
     max-width: 280px
@@ -633,20 +648,24 @@
       height: 183px
       &__button--next
         background-size: 4px
-        right: 5px
+        right: -1px
       &__button--prev
         background-size: 4px
-        left: 5px
+        left: -4px
+  .booking
+    margin-bottom: 20px
+  .hotel-right
+    min-height: 40px
   .map
-    height: 221px
+    height: 172px
   .newsletter
     padding-top: 81px
   .modal
     &__dialog
       width: 95%
       max-width: 295px
-
       padding: 33px 30px
+
 @media (max-height:480px)
   .modal
     &__dialog
