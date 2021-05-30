@@ -970,13 +970,14 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 62px 30px;
+  z-index: 10;
 }
 
 .reviews-slider__item:before {
   content: '';
   position: absolute;
   top: 121px;
-  right: 62px;
+  right: 88px;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
   width: 70px;
@@ -1090,6 +1091,7 @@ img {
   color: #333333;
   margin: auto;
   text-align: left;
+  z-index: 99;
 }
 
 .activities {
@@ -1913,8 +1915,8 @@ img {
 .modal__dialog {
   position: relative;
   max-width: 478px;
-  mx-height: 487px;
   padding: 33px 88px;
+  padding-top: 33px;
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
@@ -1947,7 +1949,6 @@ img {
   color: #ffffff;
   text-align: center;
   margin: 0;
-  margin-bottom: 15px;
 }
 
 .modal__form {
@@ -1992,10 +1993,6 @@ img {
 }
 
 .modal__button {
-  margin-top: 15px;
-}
-
-.modal__button {
   min-width: 160px;
   min-height: 50px;
   font-style: normal;
@@ -2029,6 +2026,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 15px;
 }
 
 @media (max-width: 1200px) {
